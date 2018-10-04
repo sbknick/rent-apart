@@ -1,9 +1,15 @@
 {
-    "files": [
-      "src/*.ts",
-      "src/model/*.ts"
-    ],
     "compilerOptions": {
-      "target": "es5"
-    }
+        "noImplicitAny": true,
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node"
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "src/**/*-aot.ts"
+    ]
   }
