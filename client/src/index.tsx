@@ -1,9 +1,10 @@
-import * as React from 'react'
-import { Component } from 'react'
-import { render } from 'react-dom'
-// import './index.css'
-
+import * as React from "react";
+import { Component } from "react";
+import * as ReactDOM from "react-dom";
+import { hot } from "react-hot-loader";
 import "./index.scss";
+
+declare var module;
 
 class App extends Component 
 {
@@ -13,4 +14,6 @@ class App extends Component
   }
 }
 
-render(<App />, document.getElementById('root'));
+let MyApp = hot(module)(App);
+
+ReactDOM.render(<App />, document.getElementById('root'));
