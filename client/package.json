@@ -1,0 +1,22 @@
+{
+  "name": "rent-apart-client",
+  "version": "0.0.1",
+  "description": "client for RentApart",
+  "main": "index.js",
+  "author": "Blair Knickerbocker",
+  "license": "ISC",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "clean": "rimraf -rf dist"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-game-kit": "^1.0.6",
+    "react-hot-loader": "^4.3.11"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.10.2"
+  }
+}
